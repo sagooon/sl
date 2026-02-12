@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply overflow-hidden fixed inset-0 w-full h-full;
+    touch-action: none;
+  }
+}
+
+:root {
+  --background: 40 33% 98%;
+  --foreground: 0 0% 10%;
+}
+
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+}

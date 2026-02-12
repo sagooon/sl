@@ -1,0 +1,43 @@
+This prompt is designed to help the Replit Agent match the visual precision of your uploaded designs while implementing the specific "no-scroll" scroll-driven animation you described.
+
+The Replit Agent "Visual & Technical Refinement" Prompt
+Copy and paste this into your Replit chat to overhaul the design:
+
+"Update the current project to match these exact design and behavioral specifications:
+
+1. Layout & Scroll Behavior:
+
+No Page Movement: The viewport must remain fixed. Hide the scrollbar entirely (overflow: hidden on body).
+
+Scroll-Driven Animation: Use a virtual scroll listener (or an invisible tall div) so that scrolling down only progresses the animation. The webpage itself should not move.
+
+Full Screen: The envelope and revealed letter must be centered and cover the full mobile screen (optimized for iPhone 11).
+
+2. Visual Design (Matching References):
+
+Envelope Appearance: Match 1000057433.png. Use a cream/off-white background. Include the red heart-shaped wax seal in the center.
+
+Envelope Text: Above the seal, place 'the love you gave was never a waste.' in JimmyScript (or a similar cursive if unavailable). Below the seal, place 'LOVE, OLIVIA' in IBM Plex Mono.
+
+Letter Appearance: Match 1000057434.png. The letter must have a thick red border. Inside, include a small red heart icon at the bottom.
+
+Letter Text: Use the font Homemade Apple for the handwritten body text.
+
+3. The Animation Sequence:
+
+0-30% Scroll: The red heart seal fades out and the top flap opens smoothly.
+
+30-100% Scroll: The letter slides out of the envelope and scales up to fill the screen elegantly.
+
+Music: Ensure 'music.mp3' loops in the background, starting immediately upon the first scroll interaction.
+
+4. Font Integration:
+
+Import 'IBM Plex Mono' and 'Homemade Apple' from Google Fonts. If 'JimmyScript' isn't available, use 'Dancing Script' as a close substitute for the envelope text."
+
+Implementation Tips for the Perfect "Apple" Feel
+Font Check: Replit might struggle to find "JimmyScript" as it is often a premium font. If the Agent tells you it can't find it, ask it to use Dancing Script with a font-weight of 500—it mimics that elegant, loopy look perfectly.
+
+The "No-Scroll" Trick: To make the animation feel high-end, the Agent should use a "virtual scroll" or deltaY listener. This ensures that even though the page isn't moving, the "inertia" of a finger swipe on an iPhone still makes the flap open with a natural weight.
+
+Audio Loop: Ensure the Agent adds the loop attribute to your <audio> tag so the Laura Palmer theme doesn't cut out during a long read.
